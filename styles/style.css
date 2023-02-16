@@ -86,7 +86,8 @@ nav {
 /* quick list features */
 
 
-main, footer {
+main,
+footer {
     margin: 85px 160px;
 }
 
@@ -226,28 +227,33 @@ main, footer {
 .achievement-section {
     margin-top: 100px;
 }
+
 .achievements {
     display: flex;
     gap: 80px;
 }
+
 .achievement {
     border: 1px solid #FF900E;
-border-radius: 8px;
-padding: 35px;
-text-align: center;
+    border-radius: 8px;
+    padding: 35px;
+    text-align: center;
 }
+
 .achievement:hover {
     background-color: #c2d6d6;
 }
+
 .achievement h2 {
     font-weight: 600;
-font-size: 45px;
-color: #424242;
+    font-size: 45px;
+    color: #424242;
 }
-.achievement p{
+
+.achievement p {
     font-weight: 600;
-font-size: 20px;
-color: #727272;
+    font-size: 20px;
+    color: #727272;
 }
 
 /* sponsor styles  */
@@ -256,21 +262,25 @@ color: #727272;
     text-align: center;
     margin-bottom: 30px;
 }
+
 .sponsor-text h2 {
     font-weight: 700;
-font-size: 45px;
-color: #131313;
-margin-bottom: 24px;
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 24px;
 }
+
 .sponsor-text p {
     color: #727272;
     margin-bottom: 50px;
 }
+
 .sponsors {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .sponsor img {
     filter: grayscale(100%);
 }
@@ -284,8 +294,158 @@ margin-bottom: 24px;
     margin-bottom: 120px;
     text-align: center;
 }
-.rights-section p{
+
+.rights-section p {
     padding: 30px;
     font-size: 20px;
     color: #424242;
+}
+
+/* -----------
+media quaries
+--------------- */
+
+@media screen and (max-width: 577px) {
+    body {
+        width: 100%;
+    }
+
+    .primary-button {
+        margin-bottom: 0;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .nav-logo {
+        text-align: center
+    }
+
+    .banner-title {
+        padding: 0;
+        font-size: 55px;
+        margin-top: 20px;
+    }
+
+    .banner-text .primary-button {
+        margin-bottom: 20px;
+    }
+
+    .banner-photo {
+        width: 90%;
+        padding-bottom: 30px;
+    }
+
+    .corporate-photos>img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-section {
+        width: 100%;
+    }
+
+    main {
+        width: 80%;
+        margin: 30px 30px;
+    }
+
+    .quick-list-feature {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .corporate-photos,
+    footer {
+        margin: 0;
+    }
+
+    .quick-list {
+        margin-top: 25px;
+    }
+
+    .quick-list p {
+        padding: 0;
+        margin-bottom: 25px;
+    }
+
+    .full-feature {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        margin-top: 60px;
+        gap: 0;
+    }
+
+    .feature-heading {
+        justify-content: center;
+    }
+
+    .feature-heading hr {
+        height: 80px;
+    }
+
+    .feature-heading h2 {
+        font-size: 34px
+    }
+
+    .feature-full-image img {
+        height: 100%;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .feature {
+        padding: 16px;
+    }
+
+    .experience-button {
+        padding: 12px;
+        position: initial;
+        margin-top: 20px;
+        margin-bottom: 45px;
+        margin-left: 23px;
+    }
+
+    .some-facts-section {
+        text-align: center;
+    }
+
+    .achievement-section {
+        margin-top: 70px;
+    }
+
+    .achievements {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .achievement {
+        padding: 22px;
+    }
+
+    .achievement:hover {
+        background-color: #c2d6d6;‰
+    }
+
+    .sponsors {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding-left: 10px;
+    }
+
+    .rights-section {
+        margin-top: 80px;
+        margin-bottom: 45px;
+    }
+
+    .rights-section p {
+        padding: 20px;
+    }
 }
